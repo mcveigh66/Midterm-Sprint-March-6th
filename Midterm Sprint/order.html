@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Online | Moonlight Bites</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <main>
+    <h1>Your Order</h1>
+
+    <!-- Cart Section -->
+    <div class="center">
+    <div id="cartSection">
+        <h2>Selected Items</h2>
+        <div id="cartItems"></div>
+        <br />
+        <a href="menu.html" class="btn">View Menu</a><br />
+        <br />
+        <h3 id="totalDisplay">Total: $0</h3>
+    </div>
+    </div>
+
+    <!-- Customer Form -->
+    <div id="formSection">
+        <h2 class="center">Your Details</h2>
+
+        <form id="orderForm">
+
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="tel" id="phone" placeholder="Phone Number (10 digits)">
+            <input type="text" id="address" placeholder="Delivery Address">
+            <input type="text" id="email" placeholder="Email Address">
+
+            <br /><br />
+            <div class="center">
+            <div class="buttons">
+                <button type="button" id="placeOrderBtn">Place Order</button>
+            </div>
+            </div>
+
+        </form>
+    </div>
+    </main>
+
+    <footer>
+    <br /><br />
+    <div class="center">
+     <a href="index.html" class="btn">Go Home</a>
+     </div>
+    </footer>
+    
+    <div id="popup" class="popup"></div>
+     
+
+    <script src="order.js"></script>
+</body>
+</html>

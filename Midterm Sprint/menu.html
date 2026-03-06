@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Moonlight&family=Nosifer&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="sticky-element">
+    <div class="cart-container">
+    <a href="order.html" class="cart-link">
+        🛒
+        <span id="cart-count">0</span>
+    </a>
+    </div>  
+    </div>
+    
+    <h1 class="green">Pick your poison</h1>
+    <h2 class="green">From our deathly delicious food</h2>
+    <br /><br />
+
+    <!-- Breakfast Menu -->
+    <section class="menusection">
+    <h2 class="menutitle">Breakfast Menu</h2>
+
+    <div class="scrollwrapper">
+    <button class="scrollbtn left">&#10094;</button>
+
+    <div class="menucontainer" id="menuContainer">
+      
+      <div class="menucard">
+        <h3>Spider Toast</h3>
+        <br />
+        <img src="breakfast/Avocado.png" alt="Avocado Toast">
+        <h3>Avocado Toast</h3>
+        <p>$12.99</p>
+        <div class="btn"><button onclick="addToOrder('Avocado Toast', 12.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Ghostly Pancakes</h3>
+        <br />
+        <img src="breakfast/pancake ghosts.png" alt="Pancakes">
+        <h3>Pancakes with Jam</h3>
+        <p>$15.99</p>
+         <div class="btn"><button onclick="addToOrder('Ghostly Pancakes', 15.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Ghostly Chocolate Pancakes</h3>
+        <br />
+        <img src="breakfast/chocolate ghost pancakes.png" alt="Chocolate Pancakes">
+        <h3>Pancakes with Syrup</h3>
+        <p>$15.99</p>
+         <div class="btn"><button onclick="addToOrder('Ghostly Chocolate Pancakes', 15.99)">Add to Order</button></div>
+      </div>
+
+        <div class="menucard">
+          <h3>Avocado Toast with berries</h3>
+          <br />
+        <img src="breakfast/monster toast.png" alt="Monster Toast">
+        <h3>Avocado Toast with berries</h3>
+        <p>$13.99</p>
+         <div class="btn"><button onclick="addToOrder('Avocado Toast with berries', 13.99)">Add to Order</button></div>
+      </div>
+
+        <div class="menucard">
+          <h3>Yogurt and Berries</h3>
+          <br />
+          <img src="breakfast/berries and yogurt.png" alt="yogurt and berries">
+          <h3>With Tombstone Biscuit</h3>
+          <p>$7.99</p>
+           <div class="btn"><button onclick="addToOrder('Yogurt and Berries', 7.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Bacon and Eggs</h3>
+        <br />
+          <img src="breakfast/bacon and eggs.png" alt="Bacon and Eggs">
+          <h3>Spookily Shaped</h3>
+          <p>$9.99</p>
+           <div class="btn"><button onclick="addToOrder('Bacon and Eggs', 9.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Tea buns</h3>
+        <br />
+          <img src="breakfast/ghost tea buns.png" alt="Ghost Tea Buns">
+          <h3>Spookily Shaped</h3>
+          <p>$5.99</p>
+           <div class="btn"><button onclick="addToOrder('Tea buns', 5.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+         <h3>Cobweb Oatmeal</h3>
+         <br />
+          <img src="breakfast/oatmeal.png" alt="Oatmeal">
+          <h3>Oatmeal with dried Yogurt </h3>
+          <p>$6.99</p>
+           <div class="btn"><button onclick="addToOrder('Oatmeal with dried Yogurt', 6.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Monster Omelete</h3>
+        <br />
+          <img src="breakfast/omelete.png" alt="Omelete">
+          <h3>Omelete with berries</h3>
+          <p>$10.99</p>
+           <div class="btn"><button onclick="addToOrder('Omelete with berries', 10.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Skull Toast</h3>
+        <br />
+          <img src="breakfast/Skull eggs.png" alt="Skull Eggs">
+          <h3>Eggs on Toast</h3>
+          <p>$8.99</p>
+           <div class="btn"><button onclick="addToOrder('Skull Eggs on Toast', 8.99)">Add to Order</button></div>
+      </div>
+      </div>
+    <button class="scrollbtn right">&#10095;</button>
+  </div>
+</section>
+
+<br />
+<!-- Lunch Menu -->
+<section class="menusection">
+  <h2 class="menutitle">Lunch Menu</h2>
+
+  <div class="scrollwrapper">
+    <button class="scrollbtn left">&#10094;</button>
+
+    <div class="menucontainer" id="menuContainer">
+      
+      <div class="menucard">
+        <h3>Grilled Asparagus</h3>
+        <br />
+        <img src="lunch/asparagus.png" alt="asaparagus">
+        <h3>With Spooky Sauce</h3>
+        <p>$14.99</p>
+        <div class="btn"><button onclick="addToOrder('Grilled Asparagus', 14.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Beef Stew</h3>
+        <br />
+        <img src="lunch/beef stew.png" alt="beef stew">
+        <h3>Made Fresh Everyday</h3>
+        <p>$14.99</p>
+        <div class="btn"><button onclick="addToOrder('Beef Stew', 14.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Skull Jam</h3>
+        <br />
+        <img src="lunch/berry jam.png" alt="Dessert">
+        <h3>Berry Jam with Fresh Bread</h3>
+        <p>$10.99</p>
+        <div class="btn"><button onclick="addToOrder('Berry Jam with Fresh Bread', 10.99)">Add to Order</button></div>
+      </div>
+
+       <div class="menucard">
+        <h3>Cheese & Bones</h3>
+        <br />
+        <img src="lunch/cheese crackers.png" alt="Cheese and Crackers">
+        <h3>Brie Cheese and Crackers</h3>
+        <p>$8.99</p>
+        <div class="btn"><button onclick="addToOrder('Brie Cheese and Crackers', 8.99)">Add to Order</button></div>
+      </div>
+
+       <div class="menucard">
+        <h3>Cobweb Soup</h3>
+        <br />
+        <img src="lunch/cream of mushroom.png" alt="Cream of Mushroom Soup">
+        <h3>Cream of Mushroom Soup</h3>
+        <p>$7.99</p>
+        <div class="btn"><button onclick="addToOrder('Cream of Mushroom Soup', 7.99)">Add to Order</button></div>
+      </div>
+      
+       <div class="menucard">
+        <h3>Spooky Sandwhich</h3>
+        <br />
+        <img src="lunch/pulled pork.png" alt="Pulled Pork Sandwich">
+        <h3>Pulled Pork Sandwich</h3>
+        <p>$14.99</p>
+        <div class="btn"><button onclick="addToOrder('Pulled Pork Sandwich', 14.99)">Add to Order</button></div>
+      </div>
+
+         <div class="menucard">
+          <h3>Which Scone</h3>
+          <br />
+        <img src="lunch/witch scones.png" alt="Witch Scones">
+        <h3>Jam Sandwhich on a Scone</h3>
+        <p>$8.99</p>
+        <div class="btn"><button onclick="addToOrder('Jam Sandwhich on a Scone', 8.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Coffin Sandwich</h3>
+        <br />
+        <img src="lunch/coffin sandwhich.png" alt="Coffin Sandwich">
+        <h3>Turkey and Cranberry</h3>
+        <p>$10.99</p>
+        <div class="btn"><button onclick="addToOrder('Turkey and Cranberry', 10.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Cobweb Chili</h3>
+        <br />
+        <img src="lunch/Chili.png" alt="Chili">
+        <h3>Spicy Meat Chili</h3>
+        <p>$9.99</p>
+        <div class="btn"><button onclick="addToOrder('Spicy Chili', 9.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Mummy Chili</h3>
+        <br />
+        <img src="lunch/vegan chili.png" alt="Vegan Chili">
+        <h3>Vegan Chili</h3>
+        <p>$9.99</p>
+        <div class="btn"><button onclick="addToOrder('Vegan Chili', 9.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Mummy Hotdog</h3>
+        <br />
+        <img src="lunch/Hotdog.png" alt="Hotdog">
+        <h3>Hotdog with Pastry Bun</h3>
+        <p>$6.99</p>
+        <div class="btn"><button onclick="addToOrder('Hotdog with Pastry Bun', 6.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Bat Soup</h3>
+        <br />
+        <img src="lunch/bean soup.png" alt="Bean Soup">
+        <h3>Bean Soup</h3>
+        <p>$8.99</p>
+        <div class="btn"><button onclick="addToOrder('Bean Soup', 8.99)">Add to Order</button></div>
+      </div>
+      </div>
+    <button class="scrollbtn right">&#10095;</button>
+  </div>
+</section>
+
+<br />
+<!-- Dinner Menu -->
+<section class="menusection">
+  <h2 class="menutitle">Dinner Menu</h2>
+
+  <div class="scrollwrapper">
+    <button class="scrollbtn left">&#10094;</button>
+
+    <div class="menucontainer" id="menuContainer">
+      
+      <div class="menucard">
+        <h3>Octopus Bowl</h3>
+        <br />
+        <img src="dinner/Calamari.png" alt="Calamari">
+        <h3>Calamari and Black Beans</h3>
+        <p>$18.99</p>
+        <div class="btn"><button onclick="addToOrder('Calamari', 18.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Cod Fish</h3>
+        <br />
+        <img src="dinner/Cod fish.png" alt="Cod Fish">
+        <h3>Served with Side</h3>
+        <p>$15.99</p>
+        <div class="btn"><button onclick="addToOrder('Cod Fish', 15.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Ghost Pizza</h3>
+        <br />
+        <img src="dinner/ghost pizza.png" alt="pizza">
+        <h3>3 Toppings</h3>
+        <p>$15.99</p>
+        <div class="btn"><button onclick="addToOrder('Pizza 3 Toppings', 15.99)">Add to Order</button></div>
+      </div>
+
+       <div class="menucard">
+        <h3>BBQ Chicken</h3>
+        <br />
+        <img src="dinner/legs and rice.png" alt="Chicken Legs and Rice">
+        <h3>Chicken Legs and Rice</h3>
+        <p>$12.99</p>
+        <div class="btn"><button onclick="addToOrder('Chicken Legs and Rice', 12.99)">Add to Order</button></div>
+      </div>
+
+         <div class="menucard">
+          <h3>Deadly Spaghetti</h3>
+          <br />
+        <img src="dinner/pasta and meatballs.png" alt="Pasta and Meatballs">
+        <h3>Pasta and Meatballs</h3>
+        <p>$20.99</p>
+        <div class="btn"><button onclick="addToOrder('Pasta and Meatballs', 20.99)">Add to Order</button></div>
+      </div>
+
+         <div class="menucard">
+          <h3>Roast Chicken</h3>
+          <br />
+        <img src="dinner/roast chicken.png" alt="Roast Chicken">
+        <h3>Served with Side</h3>
+        <p>$25.99</p>
+        <div class="btn"><button onclick="addToOrder('Roast Chicken With Side', 25.99)">Add to Order</button></div>
+      </div>
+
+        <div class="menucard">
+        <h3>Grilled Salmon</h3>
+        <br />
+        <img src="dinner/salmon.png" alt="Salmon">
+        <h3>Served with Side</h3>
+        <p>$20.99</p>
+        <div class="btn"><button onclick="addToOrder('Grilled Salmon', 20.99)">Add to Order</button></div>
+      </div>
+    
+         <div class="menucard">
+          <h3>Hamburger</h3>
+          <br />
+        <img src="dinner/shredded burger.png" alt="Shredded Burger">
+        <h3>Shredded Beef Burger</h3>
+        <p>$12.99</p>
+        <div class="btn"><button onclick="addToOrder('Shredded BeefBurger', 12.99)">Add to Order</button></div>
+      </div>
+
+         <div class="menucard">
+          <h3>Steak and Bones</h3>
+          <br />
+        <img src="dinner/steak and bone potatoe.png" alt="Steak and Bone Potatoe">
+        <h3>Steak and Mashed Potatoe</h3>
+        <p>$30.99</p>
+        <div class="btn"><button onclick="addToOrder('Steak and Mashed Potatoe', 30.99)">Add to Order</button></div>
+      </div>
+
+         <div class="menucard">
+          <h3>Chicken Tenders</h3>
+          <br />
+        <img src="dinner/tenders and fries.png" alt="Chicken Tenders and Fries">
+        <h3>Chicken Tenders and Fries</h3>
+        <p>$14.99</p>
+        <div class="btn"><button onclick="addToOrder('Chicken Tenders and Fries', 14.99)">Add to Order</button></div>
+      </div>
+
+
+        <div class="menucard">
+          <h3>Salad</h3>
+          <br />
+        <img src="dinner/veggie salad.png" alt="Veggie Salad">
+        <h3>Veggie Salad</h3>
+        <p>$12.99</p>
+        <div class="btn"><button onclick="addToOrder('Veggie Salad', 12.99)">Add to Order</button></div>
+      </div>
+
+         <div class="menucard">
+          <h3>Vampire Blood</h3>
+          <br />
+        <img src="dinner/wine.png" alt="Wine">
+        <h3>Red Wine (Must be 19+)</h3>
+        <p>$8.99</p>
+        <div class="btn"><button onclick="addToOrder('Red Wine (Must be 19+)', 8.99)">Add to Order</button></div>
+      </div>
+    </div>
+
+    <button class="scrollbtn right">&#10095;</button>
+  </div>
+</section>
+
+<br />
+<!-- All day drinks Menu -->
+<section class="menusection">
+  <h2 class="menutitle">All Day Drinks Menu</h2>
+
+  <div class="scrollwrapper">
+    <button class="scrollbtn left">&#10094;</button>
+
+    <div class="menucontainer" id="menuContainer">
+      
+     <div class="menucard">
+       <h3>Blueberry Kale Matcha</h3>
+        <br />
+        <img src="drinks/blueberrykalematcha.png" alt="Blueberry Kale Matcha">
+        <h3>Smoothie Made Fresh</h3>
+        <p>$6.99</p>
+        <div class="btn"><button onclick="addToOrder('Blueberry Kale Matcha', 6.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Swamp Matcha</h3>
+        <br />
+        <img src="drinks/chocolate matcha.png" alt="Chocolate Matcha">
+        <h3>Chocolate Flavour Matcha</h3>
+        <p>$6.99</p>
+        <div class="btn"><button onclick="addToOrder('Chocolate Matcha', 6.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Cobweb Cappacino</h3>
+        <br />
+        <img src="drinks/cobweb cappacino.png" alt="Cobweb Cappacino">
+        <h3>Regular Cappcino</h3>
+        <p>$5.99</p>
+        <div class="btn"><button onclick="addToOrder('Cobweb Cappacino', 5.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Cobweb Espresso</h3>
+        <br />
+        <img src="drinks/cobweb espresso.png" alt="Cobweb Espresso">
+        <h3>Coffee With Espresso</h3>
+        <p>$3.99</p>
+        <div class="btn"><button onclick="addToOrder('Cobweb Espresso', 3.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Batty Latte</h3>
+        <br />
+        <img src="drinks/cookies and cream latte.png" alt="Cookies and Cream Latte">
+        <h3>Cookies and Cream Latte</h3>
+        <p>$5.99</p>
+        <div class="btn"><button onclick="addToOrder('Cookies and Cream Latte', 5.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Orange Juice</h3>
+        <br />
+        <img src="drinks/juice.png" alt="Fresh Juice">
+        <h3>Fresh Squeezed Juice</h3>
+        <p>$2.99</p>
+        <div class="btn"><button onclick="addToOrder('Fresh Squeezed Juice', 2.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Bloody Smoothie</h3>
+        <br />
+        <img src="drinks/kale and mint.png" alt="Kale and Mint">
+        <h3>Kale with Strawberry Puree</h3>
+        <p>$7.99</p>
+        <div class="btn"><button onclick="addToOrder('Kale and Mint Smoothie', 7.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Witches Latte</h3>
+        <br />
+        <img src="drinks/Lavender Latte.png" alt="Lavender Latte">
+        <h3>Lavender Latte</h3>
+        <p>$5.99</p>
+        <div class="btn"><button onclick="addToOrder('Lavender Latte', 5.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Skeleton Smoothie</h3>
+        <br />
+        <img src="drinks/Matcha smoothie.png" alt="Matcha Smoothie">
+        <h3>Matcha Smoothie</h3>
+        <p>$6.99</p>
+        <div class="btn"><button onclick="addToOrder('Matcha Smoothie', 6.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Eyeball Coffee</h3>
+        <br />
+        <img src="drinks/regular matcha.png" alt="Regular Matcha">
+        <h3>Regular Matcha Coffee</h3>
+        <p>$4.99</p>
+        <div class="btn"><button onclick="addToOrder('Regular Matcha Coffee', 4.99)">Add to Order</button></div>
+      </div>
+
+       <div class="menucard">
+        <h3>Dark Skull Coffee</h3>
+        <br />
+        <img src="drinks/skull coffee DR.png" alt="Dark Roast">
+        <h3>Dark Roast Coffee</h3>
+        <p>$2.99</p>
+        <div class="btn"><button onclick="addToOrder('Dark Roast Coffee', 2.99)">Add to Order</button></div>
+      </div>
+
+       <div class="menucard">
+        <h3>Regular Skull Coffee</h3>
+        <br />
+        <img src="drinks/skull reg roast.png" alt="Regular Coffee">
+        <h3>Regular Roast Coffee</h3>
+        <p>$2.99</p>
+        <div class="btn"><button onclick="addToOrder('Regular Roast Coffee', 2.99)">Add to Order</button></div>
+      </div>
+
+       <div class="menucard">
+        <h3>Bloody Latte</h3>
+        <br />
+        <img src="drinks/strawberry latte.png" alt="Strawberry Latte">
+        <h3>Strawberry Latte</h3>
+        <p>$5.99</p>
+        <div class="btn"><button onclick="addToOrder('Strawberry Latte', 5.99)">Add to Order</button></div>
+      </div>
+    </div>
+
+    <button class="scrollbtn right">&#10095;</button>
+
+  </div>
+</section>
+<br />
+<!-- All day pastry/dessert Menu -->
+<section class="menusection">
+  <h2 class="menutitle">All Day Dessert Menu</h2>
+
+  <div class="scrollwrapper">
+    <button class="scrollbtn left">&#10094;</button>
+
+    <div class="menucontainer" id="menuContainer">
+      
+      <div class="menucard">
+        <h3>Haunted Tarts</h3>
+        <br />
+        <img src="dessert/BB tart.png" alt="Blueberry tart">
+        <h3>Blueberry Tart</h3>
+        <p>$6.99</p>
+        <div class="btn"><button onclick="addToOrder('Blueberry Tart', 6.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Brain Cake</h3>
+        <br />
+        <img src="dessert/brain jello cake.png" alt="Brain Jello Cake">
+        <h3>Strawberry Jello Cake</h3>
+        <p>$9.99</p>
+        <div class="btn"><button onclick="addToOrder('Brain Jello Cake', 9.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Monster Hand</h3>
+        <br />
+        <img src="dessert/brownie.png" alt="Brownie">
+        <h3>Brownie with Almonds</h3>
+        <p>$4.99</p>
+        <div class="btn"><button onclick="addToOrder('Brownie', 4.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Ghost Cake</h3>
+        <br />
+        <img src="dessert/choc cake.png" alt="Chocolate Cake">
+        <h3>Chocolate Cake</h3>
+        <p>$6.99</p>
+        <div class="btn"><button onclick="addToOrder('Chocolate Cake', 6.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Vampire Croussant</h3>
+        <br />
+        <img src="dessert/choc croussant.png" alt="Chocolate Croussant">
+        <h3>Chocolate Croussant</h3>
+        <p>$5.99</p>
+        <div class="btn"><button onclick="addToOrder('Chocolate Croussant', 5.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Chocolate Ice Cream</h3>
+        <br />
+        <img src="dessert/choc ice cream.png" alt="Chocolate Ice Cream">
+        <h3>Made in House</h3>
+        <p>$4.99</p>
+        <div class="btn"><button onclick="addToOrder('Chocolate Ice Cream', 4.99)">Add to Order</button></div>
+      </div>
+      
+      <div class="menucard">
+        <h3>Cobweb Pastry</h3>
+        <br />
+        <img src="dessert/cobweb pastry.png" alt="Cobweb Pastry">
+        <h3>Pastry with Icing</h3>
+        <p>$6.99</p>
+        <div class="btn"><button onclick="addToOrder('Cobweb Pastry', 6.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Cookie Pack</h3>
+        <br />
+        <img src="dessert/cookie pack.png" alt="Cookie Pack">
+        <h3>Chocolate & Fudge Brownie</h3>
+        <p>$6.99</p>
+        <div class="btn"><button onclick="addToOrder('Cookie Pack', 6.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Cobweb Danish</h3>
+        <br />
+        <img src="dessert/danish.png" alt="Danish Pastry">
+        <h3>Danish Pastry</h3>
+        <p>$6.99</p>
+        <div class="btn"><button onclick="addToOrder('Danish Pastry', 6.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Mummy Muffin</h3>
+        <br />
+        <img src="dessert/mummy muffin.png" alt="Mummy Muffin">
+        <h3>Carrot Muffins</h3>
+        <p>$5.99</p>
+        <div class="btn"><button onclick="addToOrder('Mummy Muffin', 5.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Pumpkins</h3>
+        <br />
+        <img src="dessert/pumpkin spice croussant.png" alt="Pumpkin Spice Croussant">
+        <h3>Pumpkin Spice Croussant</h3>
+        <p>$6.99</p>
+        <div class="btn"><button onclick="addToOrder('Pumpkin Spice Croussant', 6.99)">Add to Order</button></div>
+      </div>
+
+      <div class="menucard">
+        <h3>Skull Cupcake</h3>
+        <br />
+        <img src="dessert/red velvet.png" alt="Red Velvet Cupcake">
+        <h3>Red Velvet Cupcake</h3>
+        <p>$6.99</p>
+        <div class="btn"><button onclick="addToOrder('Red Velvet Cupcake', 6.99)">Add to Order</button></div>
+      </div>
+    </div>
+
+    <button class="scrollbtn right">&#10095;</button>
+
+  </div>
+</section>
+
+<div class="center">
+<div class="links">
+  <a href="index.html" class="btn">Go Home</a>
+  <a href="order.html" class="btn">Go to Cart</a>
+  <a href="#top" class="btn">Go to Top</a>
+</div>
+</div>
+<br /><br />
+
+<div id="popup" class="popup"></div>
+
+<script src="menu.js"></script>
+</body>
+</html>
+
+
